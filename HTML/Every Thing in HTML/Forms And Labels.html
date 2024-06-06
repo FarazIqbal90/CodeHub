@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms And Labels</title>
+</head>
+<body>
+
+    <h1>HTML Forms And Labels</h1>
+    <!-- Forms are where a person puts his info like putting email id in email box and password in password box -->
+<!-- backend.php is the file where the given info will go  -->
+<!-- name abbrevation uses the given name to recognize the given data -->
+
+<h3>Name And Role Form</h3>
+
+    <form action="backend.php">
+        Name: <input type="text" >
+        Role: <input type="text">
+    </form>
+
+<h3>Email And Password Form</h3>
+
+<form action="backend.php">
+
+Email: <input type="email" name="MyEmail">
+Password: <input type="password" name="MyEmail">
+
+</form>
+
+<h3>Submit Button</h3>
+
+<form action="backend.php">
+
+    <input type="submit" value="Submit Now">
+
+</form>
+
+<h3>Date Form</h3>
+
+<form action="backend.php">
+
+Date: <input type="date">
+
+</form>
+
+<h3>Time Form</h3>
+
+<form action="backend.php">
+
+Time: <input type="time">
+
+</form>
+
+<h3>Check Box </h3>
+
+<form action="backend.php">
+
+   Checkbox: <input type="checkbox" name="checkbox">
+
+</form>
+
+<!-- if i write "checked" at the end of the code, the check box will be checked by default -->
+
+
+<form action="backend.php">
+    Checked By default: <input type="checkbox" name="checkbox" checked>
+</form>
+
+<h3>Radio Button </h3>
+
+<form action="backend.php">
+
+    Youtube: <input type="radio" name="radio">
+    Twitter: <input type="radio" name="radio">
+    FaceBook: <input type="radio" name="radio">
+
+</form>
+
+<h3>Reset Button</h3>
+<form action="backend.php">
+
+ <!-- some other type of forms are here for practical -->
+
+ Email: <input type="email" name="MyEmail">
+ Password: <input type="password" name="MyEmail">
+ <br><br>
+ <input type="reset" value="Reset Now">
+
+</form>
+
+<h3>TextArea</h3>
+
+<form action="backend.php">
+
+   Write About YourSelf: <br> <textarea name="myText" cols="60" rows="10"></textarea>
+</form>
+
+<h2>Labels</h2>
+
+<form action="bakcend.php">
+<label for="label id">Email</label>
+    <input type="email" name="MyEmail" id="label id">
+
+<label for="label id password"> Password </label>    
+    <input type="password" name="MyEmail" id="label id password">
+</form>
+
+<h3>Select Tags</h3>
+
+<form action="backend.php">
+
+    <label for="Bike">Bike</label>
+    <select name="myBike" id="Bike">
+        <option value="H2r">H2r</option>
+        <option value="hayabusa">Hayabusa</option>
+        <option value="Zx10R">Zx10R</option>
+    </select>
+
+</form>
+
+<h5>For Default Selection</h5>
+
+<form action="backend.php">
+<!-- here used "selected" code for default selection -->
+    <label for="Bike">Bike</label>
+    <select name="myBike" id="Bike">
+        <option value="H2r">H2r</option>
+        <option value="hayabusa" selected>Hayabusa</option>
+        <option value="Zx10R">Zx10R</option>
+    </select>
+
+</form>
+
+</body>
+</html>
